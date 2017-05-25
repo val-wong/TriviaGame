@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Japan Trivia Game</title>
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	 <!-- <script  src="https://code.jquery.com/jquery-3.2.1.js"</script> -->
+
+</head>
+<body>
+	<div class="container">
+
+		<!-- crystal collector jumbotron -->
+		<div class="jumbotron" style="background-color: #E1145B; color: white">
+			<div class="container">
+				<h1 class="text-center image">All Things Japan Trivia Game</h1>
+			</div>
+		</div>
+
+
+		<!-- Main content row -->
+		<div class="row">
+
+			<!-- Instructions container -->
+			<div class="col-lg-12">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title text-center">Instructions</h3>
+					</div>
+					<div class="panel-body">
+						<p class="text-center"><small>You have 50 seconds to answer all questions.</small></p>
+					</div>
+				</div>
+			</div>		
+		</div>
+
+		<div class="row">
+
+				<div class="col-lg-6">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h3 class="panel-title text-center">Start</h3>
+						</div>
+						<div class="panel-body">
+							<!-- <h3 class="text-center"><strong>78</strong></h3> -->
+							<div id="buttons" class="text-center">
+								<button id="start">Press Me</button>
+							</div>
+						</div>
+					</div>
+				</div>	
+
+			<!-- Your score -->
+				<div class="col-lg-6">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h3 class="panel-title text-center">Timer</h3>
+						</div>
+						<div class="panel-body">
+							<h3 class="text-center" id="display"><strong>00:50</strong></h3>
+						</div>
+					</div>
+				</div>
+		</div>
+
+		<form action="/success-page" class="simple-quiz">
+      <h3>What is sushi?</h3>
+      
+      <label>
+        <input type="radio" name="answers[1]" value="A">
+        Raw beef
+      </label>
+      
+      <label>
+        <input type="radio" name="answers[1]" value="B">
+        Raw fish
+      </label>
+
+      <label>
+        <input type="radio" name="answers[1]" value="C" data-correct>
+        Raw horse
+      </label>
+		
+		<form action="/success-page" class="simple-quiz">
+      <h3>Which is the biggest island of Japan?</h3>
+      
+      <label>
+        <input type="radio" name="answers[1]" value="A">
+        Honshu
+      </label>
+      
+      <label>
+        <input type="radio" name="answers[1]" value="B">
+        Fukuoka
+      </label>
+
+      <label>
+        <input type="radio" name="answers[1]" value="C" data-correct>
+        Hokkaido
+      </label>
+
+      <form action="/success-page" class="simple-quiz">
+      <h3>Which of these is a Japanese animation?</h3>
+      
+      <label>
+        <input type="radio" name="answers[1]" value="A">
+        Mickey Mouse
+      </label>
+      
+      <label>
+        <input type="radio" name="answers[1]" value="B">
+        Thundercats
+      </label>
+
+      <label>
+        <input type="radio" name="answers[1]" value="C" data-correct>
+        Attack on Titan
+      </label>
+		
+	</div>
+
+	<!-- jquery -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+	<!-- main game logic -->
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
+
+
+
+</body>
+</html>
